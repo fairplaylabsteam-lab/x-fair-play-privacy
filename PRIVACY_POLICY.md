@@ -38,11 +38,10 @@ In accordance with Google Chrome Web Store Developer Policies, the extension req
 
 | Permission | Purpose & Justification |
 | :--- | :--- |
+| **`alarms`** | Schedules a background countdown timer (such as the 40-minute rate-limit cooldown) via `chrome.alarms`. This ensures the timer continues running accurately even when the extension popup is closed, and wakes up the background service worker to notify the user and resume pending tasks safely. |
 | **`storage`** | Stores user settings, whitelist lists, action delay preferences, language selection, and action logs locally on the user's device via `chrome.storage.local`. |
-| **`activeTab`** | Grants temporary access to the currently active X (Twitter) tab when the user interacts with the extension popup or side panel. |
-| **`scripting`** | Safely executes content scripts on the user's active X tab to detect DOM user elements and trigger follow/unfollow actions upon user command. |
 | **`sidePanel`** | Enables the extension interface to be pinned alongside your X browsing tab via Chrome's native Side Panel feature. |
-| **`notifications`** | Sends native desktop notifications to inform the user when an action batch finishes or when a rate limit is detected while running in the background. |
+| **`notifications`** | Sends native desktop notifications to inform the user when an action batch finishes or when a rate limit cooldown has completed. |
 | **`tabs`** | Detects if an appropriate X page (e.g. `x.com/following`) is open and allows opening or navigating to the correct target page when initiated by the user. |
 | **`Host: https://x.com/*, https://twitter.com/*`** | Restricts script execution strictly to official X/Twitter domains to interact with profile lists. No other websites are accessed. |
 
