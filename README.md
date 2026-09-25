@@ -6,4 +6,4 @@
 3. Bật công tắc Developer mode (Chế độ dành cho nhà phát triển) ở góc trên bên phải.
 4. Bấm nút Load unpacked (Tải tiện ích đã giải nén) ở góc trên bên trái.
 5. Chọn thư mục vừa giải nén.
-6. Mở trang https://x.com và ghim extension X Fair Play lên thanh công cụ Chrome để sử dụng!
+6. Mở trang https://x.com và ghim extension X Fair Play – AI Reply & Follow Manager lên thanh công cụ Chrome để sử dụng!
